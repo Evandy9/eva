@@ -81,5 +81,5 @@ for i in range(1,10,2):
 
 for i in range(1,10):
     for j in range(1,i+1):
-        print(str(i)+"*"+str(j)+"="+str(i*j)+"\t",end="")
+        print(str(i)+"*"+str(j)+"="+str(i*j)+"\t",end="")#end=' '意思是末尾不换行，加空格
     print("")
