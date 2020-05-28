@@ -155,6 +155,6 @@ else:
 import re
 patten=r'1[3456789]\d{9}'
 string='中奖号码为5101803，中奖人手机号为13816222960'
-match=re.sub(patten,string,)
-re.s
+match=re.sub(patten,'138****2960',string) #将string中符合patten筛选的换成repl
+print(match)
 #替换危险字符
