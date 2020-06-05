@@ -158,3 +158,17 @@ string='中奖号码为5101803，中奖人手机号为13816222960'
 match=re.sub(patten,'138****2960',string) #将string中符合patten筛选的换成repl
 print(match)
 #替换危险字符
+import re
+patten=r'(黑客)|(抓包)|(特洛伊)'
+string='我特么的是一个黑客'
+match=re.sub(patten,'***',string) #将string中符合patten筛选的换成repl
+print(match)
+
+#分割字符串
+import re
+stri='@andy @amiee @amy @alex'
+patten=r'\s*@'
+match=re.split(patten,stri)
+for i in match:
+    if i !='':
+        print(i)
